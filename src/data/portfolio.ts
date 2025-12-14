@@ -15,8 +15,8 @@ export interface Profile {
 
 export const profile: Profile = {
     name: "Jhonatan Espinal",
-    role: "Full Stack Developer",
-    bio: "Actualmente funjo como desarrollador web en IAMSA y SEO jr donde constantemente doy mantenimiento y optimizaciones de los sitios web de marcas como ETN, AUTOVÍAS, COSTA LINE y VIVABUS",
+    role: "Frontend Developer",
+    bio: "Soy un joven desarrollador con más de 2 años de experiencia, creo y doy mantenimiento constate a los sitios web de Grupo IAMSA para sus diversas marcas, así como mantengo mi propio producto en linea dando soporte y actualizaciones constantes para garantizar una excelente experiencia de usuario.",
     cvUrl: `${ASSETS_URL}/cv/CV_Jhonatan_Espinal_Garcia.pdf`,
     photoUrl: `${ASSETS_URL}/profile/jhonatan-espinal.webp`,
     socialLinks: {
@@ -37,7 +37,7 @@ export interface Experience {
 export const experience: Experience[] = [
     {
         id: 1,
-        title: "CEO & Desarrollador Full stack",
+        title: "Desarrollador",
         company: "CalculFisc",
         date: "20 / mayo / 2024 - Actualidad",
         description: "Diseño y desarrollo de la plataforma web de CalculFisc, una aplicación web que permite a los usuarios calcular impuestos, administrar sus nóminas, verificar su salario real despues de impuestos y previsualizar facturas para personas fisicas en el regimen RESICO."
@@ -45,13 +45,13 @@ export const experience: Experience[] = [
     {
         id: 2,
         title: "Desarrollador Frontend | SEO jr",
-        company: "ETN Turistar",
+        company: "Grupo IAMSA",
         date: "20 / feb / 2025 - Actualidad",
-        description: "Lideré la reconstrucción técnica de sitios web clave, logrando un aumento del 40-50% en rendimiento y accesibilidad. Implementé optimización SEO, mejoras de carga con imágenes WebP/AVIF y el flujo de trabajo con Git/GitHub para el equipo."
+        description: "Lidero la reconstrucción de sitios web clave, logrando un aumento del 40-50% en rendimiento, accesibilidad y buenas practicas de SEO."
     },
     {
         id: 3,
-        title: "CEO & Desarrollador Full stack",
+        title: "Desarrollador Frontend",
         company: "JEG Dev Studios",
         date: "20 / mayo / 2024 - Actualidad",
         description: "Liderazgo y desarrollo integral de proyectos full-stack. Responsable del desarrollo frontend con React/Next.js, backend con Node.js, y la implementación de estrategias SEO y marketing digital."
@@ -72,48 +72,47 @@ export const projects: Project[] = [
     {
         id: 1,
         title: "CalculFisc",
-        description: "Diseño y desarrollo de la plataforma web de CalculFisc, una aplicación web que permite a los usuarios calcular impuestos, administrar sus nóminas, verificar su salario real despues de impuestos y previsualizar facturas para personas fisicas en el regimen RESICO.",
-        tech: ["Next", "TypeScript", "Tailwind CSS"],
+        description: "Diseño y desarrollo del sitio web y aplicación web de CalculFisc, que se encuentra en producción y con más de 10 usuarios activos.",
+        tech: ["Next", "TypeScript", "Tailwind CSS", "Vercel", "Firebase", "Strapi", "Google Cloud", "Stripe"],
         image: `${ASSETS_URL}/projects-img/CalculFisc.webp`,
         link: "https://www.calculfisc.com",
         github: "https://github.com/JhonEG-17/CalculFisc-Web"
     },
     {
         id: 2,
+        title: "Liverpool Shop Clone",
+        description: "Clon del e-commerce de Liverpool, enfocado en replicar y mejorar la UX y el flujo visual de la tienda aprovechando más el uso del area util de la pantalla.",
+        image: `${ASSETS_URL}/projects-img/liverpool-shope-clone.webp`,
+        tech: ["React", "TypeScript", "Tailwind CSS", "Vercel"],
+        link: "https://liverpool-shop-clone.vercel.app/",
+        github: "https://github.com/JhonEG-17/liverpool-shop-clone",
+    },
+    {
+        id: 3,
         title: "JEG Dev Studios WEB",
-        description: "Sitio web corporativo full-stack con frontend en React/Next.js y backend en Node.js/Express. Integra Blogger API y Firebase, aplicando estrategias avanzadas de SEO on-page y optimización de rendimiento. Desplegado en Vercel y Render.",
-        tech: ["Next", "TypeScript", "Tailwind CSS"],
+        description: "Sitio web corporativo con frontend en React/Next.js y backend en Node.js/Express, Integración de API de Blogger y Firebase, con despliegue en Vercel y Render y optimización SEO",
+        tech: ["Next", "TypeScript", "Tailwind CSS", "Vercel", "Render", "Blogger", "Firebase"],
         image: `${ASSETS_URL}/projects-img/JEGDEVSTUDIOS.webp`,
         link: "https://www.jegdevstudios.com",
         github: "https://github.com/JhonEG-17/jeg-dev-studios-site",
     },
-    {
-        id: 8,
-        title: "Liverpool Shop Clone",
-        description: "Clon de alta fidelidad de la página de Liverpool, enfocado en replicar y mejorar la UX/UI. Demuestra mi capacidad para construir componentes complejos y responsivos con React, Vite y TypeScript, utilizando Tailwind CSS para la maquetación avanzada.",
-        image: `${ASSETS_URL}/projects-img/liverpool-shope-clone.webp`,
-        tech: ["React", "TypeScript", "Tailwind CSS"],
-        link: "https://liverpool-shop-clone.vercel.app/",
-        github: "https://github.com/JhonEG-17/liverpool-shop-clone",
-    }
 ]
 
 export const certifications = [
-    "Java paa principiantes",
-    "Redes Neuronales desde cero: Un enfoque practico y fácil de entender",
     "React para principiantes",
-    "Diseño accesible e inclusivo",
     "React en acción: De cero a experto en Desarrollo Front End",
-    "CSS Avanzado",
-    "Python",
-    "QA Desde cero: Principios",
-    "Java paa principiantes",
-    "Bases de datos con un café",
     "HTML esencial",
-    "Machine Learning con un café",
-    "BD Relacionales con MySQL",
     "HTML y CSS desde cero",
+    "CSS Avanzado",
+    "Diseño accesible e inclusivo",
     "Introducción a Git y GitHub",
+    "BD Relacionales con MySQL",
+    "Bases de datos con un café",
+    "QA Desde cero: Principios",
+    "Machine Learning con un café",
+    "Curso de iniciación al desarrollo con IA",
+    "Redes Neuronales desde cero: Un enfoque practico y fácil de entender",
+    "Python",
     "C++ Esencial",
-    "Curs de iniciación al desarrollo con IA",
+    "Java para principiantes",
 ]

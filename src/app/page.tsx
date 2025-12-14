@@ -43,11 +43,11 @@ export default function Home() {
       <main className="min-h-screen text-slate-200 font-sans selection:bg-neon-blue selection:text-black overflow-x-hidden">
         <SpaceBackground />
 
-        <div className="max-w-7xl mx-auto px-6 pt-32 pb-20 flex flex-col gap-40">
+        <div className="max-w-7xl mx-auto px-6 pt-16 lg:pt-8 pb-20 flex flex-col gap-40">
           {/* HERO SECTION MEJORADO */}
           <section
             id="mision"
-            className="min-h-[90vh] flex items-center relative py-20" // Aumenté altura y padding
+            className="min-h-[100dvh] flex justify-center items-center relative"
           >
             {/* Elemento decorativo de fondo (Ajustado para no estorbar) */}
             <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-neon-purple/20 blur-[120px] rounded-full -z-1 animate-pulse-slow" />
@@ -75,7 +75,7 @@ export default function Home() {
                   variants={itemVariants}
                   className="text-5xl md:text-7xl lg:text-8xl font-black text-white leading-tight tracking-tight"
                 >
-                  FULL STACK <br />
+                  FRONTEND <br />
                   <span className="relative inline-block">
                     <span className="relative z-1 text-white drop-shadow-[0_0_15px_rgba(188,19,254,0.8)]">
                       DEVELOPER
@@ -107,10 +107,12 @@ export default function Home() {
                   className="flex flex-wrap gap-4 pt-4 justify-center lg:justify-start"
                 >
                   <Link
-                    href="#proyectos"
-                    className="group relative px-8 py-4 bg-white text-black font-bold text-sm tracking-wider hover:bg-neon-cyan transition-all duration-300 clip-path-slant"
+                    href={profile.cvUrl}
+                    className="flex gap-3 group relative px-8 py-4 bg-white text-black font-bold text-sm tracking-wider hover:bg-neon-cyan transition-all duration-300 clip-path-slant"
                   >
-                    EXPLORAR SISTEMAS
+
+                    <Download size={18} />
+                    DESCARGAR CV
                     <div className="absolute inset-0 border-2 border-white translate-x-1 translate-y-1 -z-1 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform"></div>
                   </Link>
 
@@ -128,17 +130,6 @@ export default function Home() {
                     className="px-8 py-4 border border-slate-700 text-slate-300 font-bold text-sm tracking-wider bg-transparent hover:border-blue-500 hover:text-blue-500 hover:bg-blue-500/10 transition-all duration-300"
                   >
                     LinkedIn
-                  </Link>
-
-                  <Link
-                    href={profile.cvUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    download="CV_Jhonatan_Espinal.pdf"
-                    className="flex gap-3 px-8 py-4 border border-slate-700 text-slate-300 font-bold text-sm tracking-wider bg-transparent hover:border-blue-500 hover:text-white hover:bg-blue-500/10 transition-all duration-300"
-                  >
-                    <Download size={18} />
-                    DESCARGAR CV
                   </Link>
                 </motion.div>
               </motion.div>
@@ -205,9 +196,16 @@ export default function Home() {
               </span>
             </div>
 
+            {/* Primer proyecto destacado */}
+            {projects.length > 0 && (
+              <div className="mb-12">
+                <ProjectCard project={projects[0]} index={0} />
+              </div>
+            )}
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-              {projects.map((proj, i) => (
-                <ProjectCard key={proj.id} projects={proj} index={i} />
+              {projects.slice(1).map((proj, i) => (
+                <ProjectCard key={proj.id} project={proj} index={i + 1} />
               ))}
             </div>
           </section>

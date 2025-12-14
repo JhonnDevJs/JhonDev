@@ -5,12 +5,12 @@ import { Github, ExternalLink } from "lucide-react";
 import React from "react";
 
 interface ProjectCardProps {
-  projects: Project;
+  project: Project;
   index: number;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ projects, index }) => {
-  const { id, title, description, tech, image, link, github } = projects;
+const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
+  const { id, title, description, tech, image, link, github } = project;
 
   return (
     <motion.div
@@ -37,15 +37,17 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ projects, index }) => {
             <Link
               href={github}
               target="_blank"
-              className="p-2 bg-slate-900 rounded-full hover:bg-blue-900 hover:text-white transition-colors"
+              className="flex gap-1 p-2 px-3 bg-slate-900 rounded-full hover:bg-purple-900 hover:text-white transition-colors"
             >
+              GitHub
               <Github size={18} />
             </Link>
             <Link
               href={link}
               target="_blank"
-              className="p-2 bg-slate-900 rounded-full hover:bg-purple-900 hover:text-white transition-colors"
+              className="flex gap-1 p-2 px-3 bg-slate-900 rounded-full hover:bg-blue-900 hover:text-white transition-colors"
             >
+              Sitio Web
               <ExternalLink size={18} />
             </Link>
           </div>
