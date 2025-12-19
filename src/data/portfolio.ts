@@ -20,7 +20,7 @@ export const profile: Profile = {
     cvUrl: `${ASSETS_URL}/cv/CV_Jhonatan_Espinal_Garcia.pdf`,
     photoUrl: `${ASSETS_URL}/profile/jhonatan-espinal.webp`,
     socialLinks: {
-        github: "https://github.com/JhonEG-17",
+        github: "https://github.com/JhonnDevJs",
         linkedin: "https://www.linkedin.com/in/jhoneg",
         twitter: "https://x.com/JhonEG17",
     }
