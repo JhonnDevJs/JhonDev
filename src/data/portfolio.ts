@@ -76,25 +76,34 @@ export const projects: Project[] = [
         tech: ["Next", "TypeScript", "Tailwind CSS", "Vercel", "Firebase", "Strapi", "Google Cloud", "Stripe"],
         image: `${ASSETS_URL}/projects-img/CalculFisc.webp`,
         link: "https://www.calculfisc.com",
-        github: "https://github.com/JhonEG-17/CalculFisc-Web"
+        github: "https://github.com/JhonnDevJs/CalculFisc-Web"
     },
     {
         id: 2,
+        title: "The Simpsons Game",
+        description: "Mini juego web del clasico memorama utilizando web components y consumiendo la api de los simpsons",
+        image: `${ASSETS_URL}/projects-img/the-simpsons-memo.webp`,
+        tech: ["Lit", "The Simpsons API", "Vite", "Vercel"],
+        link: "https://the-simpsons-memo.vercel.app/",
+        github: "https://github.com/JhonnDevJs/liverpool-shop-clone",
+    },
+    {
+        id: 3,
         title: "Liverpool Shop Clone",
         description: "Clon del e-commerce de Liverpool, enfocado en replicar y mejorar la UX y el flujo visual de la tienda aprovechando más el uso del area util de la pantalla.",
         image: `${ASSETS_URL}/projects-img/liverpool-shope-clone.webp`,
         tech: ["React", "TypeScript", "Tailwind CSS", "Vercel"],
         link: "https://liverpool-shop-clone.vercel.app/",
-        github: "https://github.com/JhonEG-17/liverpool-shop-clone",
+        github: "https://github.com/JhonnDevJs/liverpool-shop-clone",
     },
     {
-        id: 3,
+        id: 4,
         title: "JEG Dev Studios WEB",
         description: "Sitio web corporativo con frontend en React/Next.js y backend en Node.js/Express, Integración de API de Blogger y Firebase, con despliegue en Vercel y Render y optimización SEO",
         tech: ["Next", "TypeScript", "Tailwind CSS", "Vercel", "Render", "Blogger", "Firebase"],
         image: `${ASSETS_URL}/projects-img/JEGDEVSTUDIOS.webp`,
         link: "https://www.jegdevstudios.com",
-        github: "https://github.com/JhonEG-17/jeg-dev-studios-site",
+        github: "https://github.com/JhonnDevJs/jeg-dev-studios-site",
     },
 ]
 
