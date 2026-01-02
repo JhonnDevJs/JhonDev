@@ -25,11 +25,11 @@ export const metadata: Metadata = {
     title: "JhonDev | Desarrollador Web (React, Next.js, TypeScript)",
     description:
       "Desarrollador Web Frontend experto en React, Next.js y TypeScript. Creo aplicaciones de alto rendimiento, accesibles y optimizadas para SEO. ¡Conoce mi trabajo!",
-    url: "https://jhoneg-17.github.io/JhonDev/",
+    url: "https://www.jhondev.xyz/",
     siteName: "JhonDev",
     images: [
       {
-        url: "https://jhoneg-17.github.io/JhonDev/src/assets/img/meta-img/jhondev.webp",
+        url: "https://wlfxrqgczmkdisaygmra.supabase.co/storage/v1/object/public/portfolio-assets/meta/meta-background.webp",
       },
     ],
     locale: "es_MX",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     description:
       "Desarrollador Web Frontend experto en React, Next.js y TypeScript. Creo aplicaciones de alto rendimiento, accesibles y optimizadas para SEO. ¡Conoce mi trabajo!",
     images: [
-      "https://jhoneg-17.github.io/JhonDev/src/assets/img/meta-img/jhondev.webp",
+      "https://wlfxrqgczmkdisaygmra.supabase.co/storage/v1/object/public/portfolio-assets/meta/meta-background.webp",
     ],
   },
   verification: {
