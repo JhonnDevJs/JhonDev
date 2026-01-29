@@ -84,8 +84,8 @@ export const projects: Project[] = [
         description: "Paquete de npm de web components de UI optimizados para instrustacion de metadatos y datos estructurados Schema",
         tech: ["NPM", "TypeScript", "Lit", "Github", "Vite"],
         image: `${ASSETS_URL}/projects-img/sema-ui.webp`,
-        link: "https://www.calculfisc.com",
-        github: "https://github.com/JhonnDevJs/CalculFisc-Web"
+        link: "https://www.npmjs.com/package/@jegdev/sema-ui",
+        github: "https://github.com/JEGDevStudios/Sema-UI"
     },
     {
         id: 2,
