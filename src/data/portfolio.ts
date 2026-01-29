@@ -79,6 +79,15 @@ export const projects: Project[] = [
         github: "https://github.com/JhonnDevJs/CalculFisc-Web"
     },
     {
+        id: 1,
+        title: "Sema UI",
+        description: "Paquete de npm de web components de UI optimizados para instrustacion de metadatos y datos estructurados Schema",
+        tech: ["NPM", "TypeScript", "Lit", "Github", "Vite"],
+        image: `${ASSETS_URL}/projects-img/sema-ui.webp`,
+        link: "https://www.calculfisc.com",
+        github: "https://github.com/JhonnDevJs/CalculFisc-Web"
+    },
+    {
         id: 2,
         title: "The Simpsons Game",
         description: "Mini juego web del clasico memorama utilizando web components y consumiendo la api de los simpsons",
